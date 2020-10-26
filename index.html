@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+    <style>
+        #topleft {
+            position: absolute;
+            margin: 12px 0 0 7px;
+        }
+
+        #topleft a{
+            color: #000;
+            font-size:small;
+            opacity: 0.75;
+            text-decoration: none;
+            font-family: arial, sans-serif;
+            padding-left: 15px
+        }
+
+        #topright {
+            position: absolute;
+            right: 30px;
+            margin: 12px 0 0 7px;
+        }
+
+        #topright a {
+            color: #000;
+            font-size:small;
+            text-decoration: none;
+            font-family: arial, sans-serif;
+            padding-left: 20px;
+            opacity: 0.9;
+        }
+
+        .signinbutton {
+            background-color: #4285F4;
+            font-weight: bold;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 2px;
+            text-decoration: bold;
+            border: 1px solid #4285F4;
+            opacity: 1;
+            margin-left: 20px;
+        }
+        .signinbutton:active {
+             background-color:#3875d6;
+         }
+
+        #logo {
+            position:fixed;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%); 
+        } 
+
+        input{
+            position: fixed;
+            top: 38%;
+            left: 50%;
+            padding: 10px;
+            margin: 10px;
+            height: 20px;
+            width: 500px;
+            border:1px solid #eaeaea;
+            border-radius: 30px;
+            outline:none;
+            transform: translate(-50%, -50%); 
+        }
+        input:hover{
+            border-color: #FFF;
+            -moz-box-shadow:    0px 0.5px 2px 2px rgb(231, 231, 231);
+            -webkit-box-shadow: 0px 0.5px 2px 2px rgb(231, 231, 231);
+            box-shadow:         0px 0.5px 2px 2px rgb(231, 231, 231);
+        }
+        input:focus{
+            border-color:#FFF;
+            -moz-box-shadow:    0px 0.5px 2px 2px rgb(231, 231, 231);
+            -webkit-box-shadow: 0px 0.5px 2px 2px rgb(231, 231, 231);
+            box-shadow:         0px 0.5px 2px 2px rgb(231, 231, 231);
+        }
+
+        input[type="submit"] {
+            position: absolute;
+            border-radius: 5px;
+            background: #f2f2f2;
+            border: 1px solid #f2f2f2;
+            color: #757575;
+            cursor: default;
+            font-size: 14px;
+            width: 130px;
+            padding: 0px 16px;
+            height:36px;
+            top: 45%;
+            left: 45%;
+        }
+
+        input[type="submit"]:hover {
+            box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+            background: #f8f8f8;
+            border: 1px solid #c6c6c6;
+            box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+            color: #222;
+        }
+
+        input[type="lucky"] {
+            position: fixed;
+            border-radius: 5px;
+            background: #f2f2f2;
+            border: 1px solid #f2f2f2;
+            color: #757575;
+            cursor: default;
+            font-size: 14px;
+            width: 120px;
+            padding: 0px 15px;
+            height:36px;
+            top: 45%;
+            left: 53%;
+        }
+
+        input[type="lucky"]:hover {
+            box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+            background: #f8f8f8;
+            border: 1px solid #c6c6c6;
+            box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+            color: #222;
+        }
+
+        a:hover {
+            text-decoration: underline !important;
+            font-family: arial, sans-serif;
+        }
+
+        #footer {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
+            line-height: 40px;
+            background-color: #f2f2f2; 
+            font-family: Arial, Helvetica, sans-serif;
+            border-top: 1px solid #e4e4e4;
+        }
+
+        #footer a {
+            color: #222;
+            opacity: 0.75;
+            text-decoration: none;
+            font-family: arial, sans-serif;
+            padding-left: 26px;
+        }
+
+        #footerleft{
+
+            display: inline-block;
+
+            
+        }
+
+        #footerright {
+            display: inline-block;
+            position: absolute;
+            right: 30px;
+            margin: 0px 0 0 15px;
+        }
+    </style>
+
+    <html lang="en">
+        <meta charset="utf-8">
+        <title>Fake Google2</title>
+        <div id="topleft">
+            <a href="#">About</a>
+            <a href="#">Store</a>
+        </div>
+        <div id="topright">
+            <a href="#">Gmail</a>
+            <a href="#">Images</a>
+            <a href="#">Apps</a>
+            <button id="signin" class="signinbutton">Sign in</button>
+        </div>
+        <div id="logo">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        </div>
+        <div class="main">
+            <input type="text" />
+            <input type="submit" value="Google Search">
+            <input type="lucky" value="I'm Feeling Lucky">
+        </div>
+        <div id="footer">
+            <div id="footerleft">
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">How Search works</a>
+            </div>
+            <div id="footerright">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Settings</a>
+            </div>
+        </div>
+    </html>
+</html>
+
+
+
+
